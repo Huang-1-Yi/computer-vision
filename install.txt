@@ -1,0 +1,11 @@
+注释掉submitit和xformers
+conda env create -f conda.yaml
+
+conda install -c conda-forge submitit
+# 或者pip install git+https://github.com/facebookincubator/submitit@main#egg=submitit
+
+pip install -r requirements.txt
+conda install xformers -c xformers
+
+
+conda env remove -n dinov22
